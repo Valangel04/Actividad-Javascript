@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de Registro</h1>
+    </header>
+
+    <main>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" maxlength="60" required>
+                <span class="error" id="errorNombres"></span>
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" maxlength="60" required>
+                <span class="error" id="errorApellidos"></span>
+            </div>
+            <div class="form-group">
+                <label for="documento">Documento:</label>
+                <input type="text" id="documento" required>
+                <span class="error" id="errorDocumento"></span>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" required>
+                <span class="error" id="errorCorreo"></span>
+            </div>
+            <div class="form-group">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" maxlength="25" required>
+                <span class="error" id="errorUsuario"></span>
+            </div>
+            <div class="form-group">
+                <label for="observaciones">Observaciones:</label>
+                <textarea id="observaciones" maxlength="200"></textarea>
+                <span class="error" id="errorObservaciones"></span>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2024 Formulario de Registro</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
